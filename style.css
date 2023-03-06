@@ -1,0 +1,52 @@
+img.pequeña{width: 100px; height: 100px;}
+img.espacio{width: 500px; height: 500px;}
+img.book{width: 150px; height: 200px;}
+h1 {
+    background-color: rgb(0, 12, 3);
+    color: white;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+
+  #enunciado{
+    background-color: rgb(233, 245, 229);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+  #t1{
+    background-color: rgb(222, 231, 124);
+    font-size: 40px;
+    color: rgb(79, 30, 30);
+  }
+  #t2{
+    background-color: rgb(144, 231, 124);
+    font-size: 40px;
+    color: rgb(30, 32, 79);
+  }
+  #descripcion{
+    font-size: 15px;
+  }
+  #text{
+    font-size: 25px;
+  }
+  #z{
+    font-size: 20px;
+  }
+  #c{
+    font-size: 20px;
+  }
+  #s{
+    font-size: 20px;
+  }
+  #boton {
+    font-size:25px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    color:white;
+    background:#3589de;
+    border:0px;
+    width:200px;
+    height:100px;
+  }
