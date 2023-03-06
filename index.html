@@ -1,7 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        .wrapper{
+            max-width:500px;
+            margin: auto;
+            background-color: aliceblue;
+            padding: 10px;
+            border:1px solid #000;
+        }
+
+        label .left{
+            float: left;
+        }
+
+        input[type=text], input[type=number]{
+            float: right;
+            width: 300px;
+        }
+        .clear{
+            clear: both;
+        }
+
+        .clear, fieldset, input[type=submit], label[for=ejemplo], select{
+            margin-bottom: 20px;
+        }
+        input[type=submit]{
+            float: right;
+            margin-bottom: 20px;
+            width: 150px;
+        }
+
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="wrapper">
+        <form action="./form-result.php" method="POST" target="_self">
+                        <div class="clear"><label for="nombre" class="left">Nombre:</label><input type="text" name="nombre"></div>
+                        <div class="clear"><label for="apellidos" class="left">Apellidos:</label><input type="text" name="apellidos"></div>
+                        <div class="clear"><label for="edad" class="left">Edad:</label><input type="number" name="edad"></div>
+
+                        <fieldset><!--Indica que vamos a -->
+                            <legend>¿Qué vehiculos tienes?</legend><!-- Nos permite añadir un título sobre el borde del formulario-->
+                            <label for="vehiculo1">Tengo una bici</label><input type="checkbox" id="vehiculo1" name="vehiculo1" value="bici">
+                            <label for="vehiculo2">Tengo un coche</label><input type="checkbox" id="vehiculo2" name="vehiculo2" value="coche">
+                            <label for="vehiculo3">Tengo un barco</label><input type="checkbox" id="vehiculo3" name="vehiculo3" value="barco">
+                        </fieldset>
+                        <label for="ejemplo">¿Jugamos?</label>
+                        <select name="ejemplo">
+                            <option value="piedra">Piedra</option>
+                            <option value="papel">Papel</option>
+                            <option value="tijera">Tijera</option>
+                        </select>
+                        <fieldset>
+                            <legend>Introduce tu sexo:</legend>
+                            <input type="radio" id="hombre" name="sexo" value="hombre">
+                            <label for="male">Hombre</label>
+                            <input type="radio" id="mujer" name="sexo" value="mujer">
+                            <label for="female">Mujer</label>
+                        </fieldset>
+                        <div class="clear"><input type="submit" value="Submit"></div>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
