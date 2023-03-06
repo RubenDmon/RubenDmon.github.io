@@ -2,16 +2,31 @@
 <html>
 <head>
   <title>Suma de Edades</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <form>
-    <label>Ingrese la cantidad de personas sedentarias: (denotadas con la letra Z)</label>
+  <img class="pequeña" src="images/universidad.jpg">adaptacion del trabajo realizado por Yeison_A_Farfán_P_(20201020138) hecha por Ruben David Montoya Arredondo (20211020055)  <p>UNIVERSIDAD FRANCISCO JOSE DE CALDAS PROYECTO PROBABILIDAD - PRIMER CORTE
+  </p>
+  <h1>Parametrizacion del : Ejercicio 12 Sección 2 propuesto en Walpoley&Myers&Myers&Ye (2012, p. 43).</h1>
+  <img class="book" src="images/walpol.png">
+    <p id="enunciado">Enunciado: <br> Se estudian el ejercicio y la dieta como posibles sustitutos del medicamento para bajar la presión sanguínea. Seutilizarán tres grupos de individuos para estudiar el efecto del ejercicio. Los integrantes del grupo uno sonsedentarios, los del dos caminan y los del tres nadan una hora al día. La mitad de cada uno de los tres grupos deejercicio tendrá una dieta sin sal. Un grupo adicional de individuos no hará ejercicio ni restringirá su consumo de sal,pero tomará el medicamento estándar. Use𝑍para sedentario,𝐶para caminante,𝑆para nadador,𝑌para sal,𝑁parasin sal,𝑀para medicamento y𝐹para sin medicamento.</p>
+
+    <p > <center id="t1">Vamos a obtener los siguientes items</center></p>
+<h2>A) Muestre todos los elementos del espacio muestral 𝑆</h2>
+<h2>B) Dado que 𝐴 es el conjunto de individuos sin medicamento y 𝐵 es el conjunto de caminantes, liste los elementos 𝐴∪𝐵</h2>
+<h2>C) Liste los elementos de 𝐴∩𝐵 </h2>
+
+<br>  
+
+<p > <center id="t2">Ahora brindanos los datos con los que deseas que trabajemos</center></p>
+<form>
+    <label id="text">Ingrese la cantidad de personas sedentarias: (denotadas con la letra Z)</label>
     <input type="number" id="z"><br><br>
-    <label>Ingrese la cantidad de personas que caminan: (denotadas con la letra C)</label>
+    <label id="text">Ingrese la cantidad de personas que caminan: (denotadas con la letra C)</label>
     <input type="number" id="c"><br><br>
-    <label>Ingrese la cantidad de personas que nadan: (denotadas con la letra S)</label>
+    <label id="text">Ingrese la cantidad de personas que nadan: (denotadas con la letra S)</label>
     <input type="number" id="s"><br><br>
-    <button type="button" onclick="init()">procesar</button>
+    <center><button type="button" id="boton" onclick="init()">procesar</button></center>
   </form>
   <p id="resultado"></p>
   <script src="script.js"></script>
