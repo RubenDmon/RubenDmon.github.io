@@ -11,8 +11,8 @@ function init() {
     ca=ponercat(ca,document.getElementById("c").value,"c");
     sa=ponercat(sa,document.getElementById("s").value,"s");
 
-
-    resultado="El conjunto con todos los casos es: <br>"
+    resultado="<p id='a'>A)</p>"
+    resultado+="El conjunto con todos los casos es: <br>"
     resultado+=conjuntog(za,ca,sa);
     resultado+="<br>"
     resultado+="<img class='espacio' src='images/espacio.png'><p id='descripcion'>imagen representativa del espacio muestral S (tomada del trabajo de Yeison_A_Farfán_P) </p>";
@@ -20,7 +20,7 @@ function init() {
     
 //poner lo en lo de union
     conjsinmed=grupoA(za,sa,ca);
- 
+    resultado +="<p id='info'>Informacion sobre los conjuntos</p>"
     resultado+="<br>El Conjunto de personas sin medicamento es: (Conjunto A) ";
     resultado+="{ ";
     for (let i = 0; i < conjsinmed.length; i++) {
@@ -40,8 +40,8 @@ function init() {
       conjunion=union(conjsinmed,ca);
 
       
-
-      resultado+="<br>El conjunto union es:  AUB";
+      resultado+="<p id='a'>B)</p>"
+      resultado+="El conjunto union es:  AUB";
     resultado+="{ ";
     for (let i = 0; i < conjunion.length; i++) {
         resultado+=(conjunion[i].ejercicio + conjunion[i].sal + conjunion[i].medicamento + ",")
@@ -54,8 +54,8 @@ function init() {
         conjinterseccion=interseccion(ca,conjsinmed);
       }
       
-
-      resultado+="<br>El conjunto interseccion es: 𝐴∩𝐵";
+      resultado+="<br><p id='a'>C)</p>"
+      resultado+="El conjunto interseccion es: 𝐴∩𝐵";
     resultado+="{ ";
     
         resultado+=conjinterseccion;

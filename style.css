@@ -50,3 +50,13 @@ h1 {
     width:200px;
     height:100px;
   }
+  #a{
+    font-size: 25px;
+    font-family:Verdana,Helvetica;
+    background-color: aquamarine;
+  }
+  #info{
+    font-size: 30px;
+    color: crimson;
+    background-color: rgba(255, 247, 6, 0.601);
+  }
