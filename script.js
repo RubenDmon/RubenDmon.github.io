@@ -48,7 +48,12 @@ function init() {
       }
       resultado+=" }";
 
-      conjinterseccion=interseccion(conjsinmed,ca);
+      if(conjsinmed.length >= ca.length) {
+        conjinterseccion=interseccion(conjsinmed,ca);
+      }else{
+        conjinterseccion=interseccion(ca,conjsinmed);
+      }
+      
 
       resultado+="<br>El conjunto interseccion es: 𝐴∩𝐵";
     resultado+="{ ";
@@ -206,7 +211,7 @@ str[cont] = {
     }*/
     for (let j = 0; j < b.length; j++) {
             aux=b[j].ejercicio+b[j].sal+b[j].medicamento;
-            if(stringa.includes(aux)){
+            if(stringa.includes(aux) && (str.includes(aux)===false)){
                 str+=(aux +" ,");
             }
     }
