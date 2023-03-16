@@ -10,15 +10,13 @@ function init() {
     za=ponercat(za,document.getElementById("z").value,"z");
     ca=ponercat(ca,document.getElementById("c").value,"c");
     sa=ponercat(sa,document.getElementById("s").value,"s");
-
-    resultado="<p id='a'>A) El conjunto con todos los casos es: <br></p>"
+    if((document.getElementById("z").value>0) || (document.getElementById("c").value>0) || (document.getElementById("s").value>0)){
+resultado="<p id='a'>A) El conjunto con todos los casos es: <br></p>"
     resultado+="A= ";
     resultado+=conjuntog(za,ca,sa);
     resultado+="<br>"
     resultado+="<img class='espacio' src='images/espacio.png'><p id='descripcion'>imagen representativa del espacio muestral S (tomada del trabajo de Yeison_A_Farfán_P) </p>";
-    
-    
-//poner lo en lo de union
+    //poner lo en lo de union
     conjsinmed=grupoA(za,sa,ca);
     resultado +="<p id='info'>Informacion sobre los conjuntos</p>"
     resultado+="<br>El Conjunto de personas sin medicamento es: (Conjunto A) ";
@@ -31,7 +29,7 @@ function init() {
       resultado+="<br>"
       resultado+="<br>El Conjunto de personas caminantes es: (Conjunto B)";
     resultado+="{ ";
-    for (let i = 0; i < ca.length; i++) {
+     for (let i = 0; i < ca.length; i++) {
         resultado+=(ca[i].ejercicio + ca[i].sal + ca[i].medicamento + ",")
       }
       resultado+=" }";
@@ -62,7 +60,16 @@ function init() {
       
       resultado+=" }";
     document.getElementById("resultado").innerHTML =  resultado;
-  }
+ 
+
+
+      
+    }else{
+      window.alert('Lo siento los numeros introducidos deben ser enteros y mayores a 0');
+    }
+    
+ }
+   
 
   function ponercat(c, cant, cat) {
     let flag = true;
