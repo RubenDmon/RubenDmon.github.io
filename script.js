@@ -10,7 +10,7 @@ function init() {
     za=ponercat(za,document.getElementById("z").value,"z");
     ca=ponercat(ca,document.getElementById("c").value,"c");
     sa=ponercat(sa,document.getElementById("s").value,"s");
-    if((document.getElementById("z").value>0) || (document.getElementById("c").value>0) || (document.getElementById("s").value>0)){
+    if((document.getElementById("z").value>0) && (document.getElementById("c").value>0) && (document.getElementById("s").value>0)){
 resultado="<p id='a'>A) El conjunto con todos los casos es: <br></p>"
     resultado+="A= ";
     resultado+=conjuntog(za,ca,sa);
@@ -65,7 +65,7 @@ resultado="<p id='a'>A) El conjunto con todos los casos es: <br></p>"
 
       
     }else{
-      window.alert('Lo siento los numeros introducidos deben ser enteros y mayores a 0');
+      window.alert('Lo siento los numeros introducidos deben ser mayores a 0');
     }
     
  }
