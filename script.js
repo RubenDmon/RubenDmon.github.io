@@ -11,7 +11,9 @@ function init() {
     ca=ponercat(ca,document.getElementById("c").value,"c");
     sa=ponercat(sa,document.getElementById("s").value,"s");
     if((document.getElementById("z").value>0) && (document.getElementById("c").value>0) && (document.getElementById("s").value>0)){
-resultado="<p id='a'>A) El conjunto con todos los casos es: <br></p>"
+
+    resultado="<nav><a href='https://matematicasmodernas.com/union-e-interseccion-de-conjuntos/' class='nav-link'  target='_blank'>Click:Teoria de conjuntos</a></nav>";
+    resultado+="<br><p id='a'>A) El conjunto con todos los casos es: <br></p>"
     resultado+="A= ";
     resultado+=conjuntog(za,ca,sa);
     resultado+="<br>"
