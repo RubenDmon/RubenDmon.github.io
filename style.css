@@ -1,6 +1,6 @@
 img.pequeña{width: 100px; height: 100px;}
-img.espacio{width: 500px; height: 500px;}
-img.book{width: 200px; height: 200px;}
+img.espacio{width: 150px; height: 140px;}
+img.book{width: 150px; height: 150px;}
 h1 {
     background-color: rgb(0, 12, 3);
     color: white;
@@ -12,7 +12,7 @@ h1 {
 
   #enunciado{
     background-color: rgb(233, 245, 229);
-    font-size: 20px;
+    font-size: 35px;
     color: rgb(0, 0, 0);
   }
   #t1{
@@ -94,4 +94,5 @@ nav a:hover{
 }
 #textoud{
   font-family: Georgia, serif;
+  font-size: 25px;
 }

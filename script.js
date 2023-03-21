@@ -17,7 +17,7 @@ function init() {
     resultado+="A= ";
     resultado+=conjuntog(za,ca,sa);
     resultado+="<br>"
-    resultado+="<img class='espacio' src='images/espacio.png'><p id='descripcion'>imagen representativa del espacio muestral S (tomada del trabajo de Yeison_A_Farfán_P) </p>";
+    resultado+="";
     //poner lo en lo de union
     conjsinmed=grupoA(za,sa,ca);
     resultado +="<p id='info'>Informacion sobre los conjuntos</p>"
